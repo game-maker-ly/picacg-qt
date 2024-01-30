@@ -29,6 +29,8 @@ except Exception as es:
     if hasattr(es, "msg"):
         config.ErrorMsg = es.msg
 
+config.CanWaifu2x = False
+
 from PySide6.QtGui import QFont, QFontDatabase
 from PySide6 import QtWidgets  # 导入PySide6部件
 from PySide6.QtNetwork import QLocalSocket, QLocalServer
